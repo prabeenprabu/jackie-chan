@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarpanch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+
+:root{
+    --background: #d5f4e6;
+    --lightblue: #80ced6;
+    --white: #fefbd8;
+    --grey : #618685;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.index{
+    width: 70%;
+    margin: 0 auto;
+    background: #d5f4e6;
+}
+
+.header{
+    height: 15vh;
+    width: 100%;
+    background-color: var(--lightblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1{
+    color: var(--white);
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+.flex{
+    width: 40%;
+    margin: 10px auto;
+    display: flex;
+    border: black 2px dashed;
+    flex-wrap: wrap;
+}
+
+.box{
+    border: var(--grey) solid;
+    padding: 12px 18px;
+    margin: 10px 10px;
+    background-color: var(--lightblue);
+    width: 100%;
+    text-align: center;
+}
+
+.box a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 27px;
+}
+
+.footer{
+    width: 100%;
+    height: 5vh;
+    background-color: var(--grey);
+    color: var(--white);
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    clear: both;
+    font-family: 'Cinzel', serif;
+
+}
+
+/* jackie_chan page design  */
+
+.container{
+    width: 75%;
+    background-color: var(--background);
+    margin: 0 auto;
+}
+
+nav{
+    width: 100%;
+    background-color: var(--grey);
+    padding: 10px 15px;
+    height: 8vh;
+    position: relative;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 7px 0;  
+}
+
+nav ul  li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--white); 
+    padding: 5px 18px;     
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sel{
+    color: black;
+    background:#fefbd8;
+}
+
+.fa-bars{
+    font-size: 25px;
+    color: var(--white);
+    position: absolute;
+    left: 2vw;
+    top: calc(8vh - 6vh);    
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.fa-xmark{
+    font-size: 25px;
+    color: var(--white);
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.content{
+    padding: 15px;
+}
+
+.content h1, h2{
+    color: var(--grey);
+    margin: 10px 0;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#right{
+    width: 50%;
+    margin: 15px;
+    height: auto;
+    float: right;
+}
+
+#left{
+    width: 40%;
+    margin: 15px;
+    height: auto;
+    float: left;
+}
+
+.content p{
+    color: black;
+    text-align: justify;
+    font-size: 22px;
+    line-height: 29px;
+    margin: 15px 0;
+    text-indent: 50px;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+/* media quries  */
+
+@media screen and (max-width:768px) {
+
+        .flex{
+        width: 70%;
+    }  
+    .fa-xmark,.fa-bars{
+        display: block;
+    }
+    
+    #right{
+        width: 90%;
+
+    }
+    #left{
+        width: 90%;
+    }
+
+    .container{
+        width: 100%;
+    }
+    .container h1{
+        font-size: 35px;
+    }
+
+    #dis{
+        display: flex;
+        position: absolute;
+        z-index: 5;
+        height: 80vh;
+        width: 50vw;
+        background-color: var(--grey);
+        left: -400px;
+        top: 0;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
+        padding: 30px 0;
+        transition: .7s ease-out;
+    }   
+    
+}
+
+@media screen and (max-width:320px){
+
+    .flex{
+        width: 100%;
+    } 
+
+}
