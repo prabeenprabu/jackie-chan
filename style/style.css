@@ -182,9 +182,11 @@ nav ul  li a{
     .fa-xmark,.fa-bars{
         display: block;
     }
-    .index{
-         width:100%;
-}
+.index{
+    width: 100%;}
+    
+
+
     #right{
         width: 90%;
 
