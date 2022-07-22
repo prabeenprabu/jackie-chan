@@ -177,11 +177,14 @@ nav ul  li a{
 
         .flex{
         width: 70%;
-    }  
+    } 
+
     .fa-xmark,.fa-bars{
         display: block;
     }
-    
+    .index{
+         width:100%;
+}
     #right{
         width: 90%;
 
